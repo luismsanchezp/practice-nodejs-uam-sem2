@@ -16,7 +16,7 @@ person_routes.get('/', (req, res)=>{
         .catch((err) => res.json(err));
 });
 person_routes.get('/personId', (req, res)=>{})
-person_routes.post('/', (req, res)=>{
+person_routes.post('/person', (req, res)=>{
     const new_person = person_model(req.body);
     new_person
         .save()
