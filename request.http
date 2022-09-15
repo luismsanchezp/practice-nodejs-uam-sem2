@@ -1,0 +1,61 @@
+###
+# PERSONS RESOURCE REQUESTS
+###
+
+POST http://localhost:5000/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+"username": "User3",
+"lastname": "Rodriguez",
+"age": 21,
+"email": "user3@ucaldas.edu.co"
+}
+###
+GET http://localhost:5000/api/persons HTTP/1.1
+###
+GET http://localhost:5000/api/persons/6323b5da95af2d358f3ae640 HTTP/1.1
+###
+DELETE http://localhost:5000/api/persons/6323b62295af2d358f3ae646 HTTP/1.1
+###
+
+PUT http://localhost:5000/api/persons/6323b5da95af2d358f3ae640 HTTP/1.1
+Content-Type: application/json
+
+{
+"username": "Luis",
+"lastname": "Sanchez",
+"age": 18,
+"email": "user34@ucaldas.edu.co"
+}
+
+###
+# COURSES RESOURCE REQUESTS
+###
+
+POST http://localhost:5000/api/courses HTTP/1.1
+Content-Type: application/json
+
+{
+"course_name": "Diff Equations",
+"code": "2256q22",
+"credits": 4,
+"hours": 3
+}
+###
+GET http://localhost:5000/api/courses HTTP/1.1
+###
+GET http://localhost:5000/api/courses/6323b8b86d7005796f072edf HTTP/1.1
+###
+DELETE http://localhost:5000/api/courses/6323b8746d7005796f072ed9 HTTP/1.1
+###
+
+PUT http://localhost:5000/api/courses/6323b8b86d7005796f072edf HTTP/1.1
+Content-Type: application/json
+
+{
+"course_name": "Diff Equations",
+"code": "2256q22",
+"credits": 3,
+"hours": 9
+}
